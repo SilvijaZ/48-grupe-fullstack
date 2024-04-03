@@ -25,7 +25,6 @@ function App() {
         <h1>Student Info</h1>
       </header>
       <main>
-        {/* Get Student button */}
         <button onClick={handleFetchStudent}>Get Student</button>
         {student ? (
           <div>
@@ -35,7 +34,6 @@ function App() {
           </div>
         ): null}
 
-        {/* Get All Students button */}
         <button onClick={handleFetchAllStudents}>Get All Students</button>
         {allStudents.length > 0 ? (
           <div>
@@ -55,54 +53,3 @@ function App() {
 }
 
 export default App;
-
-
-
-// function App() {
-
-//   const [student, setStudent] = useState('');
-
-
-
-//   // function handleFormSubmit(e){
-//   //   e.preventDefault();
-
-//   //   fetch('http://localhost:4831/api/students')
-//   //   .then(res => res.json())
-//   //   .then(data => setStudentsData(data))
-//   //   .catch(e => console.error(e));
-
-//   // }
-
-
-//   function handleFetchStudent(e) {
-//     e.preventDefault();
-
-//     fetch('http://localhost:4831/api/students')
-//       .then(res => res.json())
-//       .then(data => setStudent(data))
-//       .catch(error => console.error(error));
-//   }
-
-
-//   return (
-//         <form>
-//           <header>
-//             <h1>Student Info</h1>
-//           </header>
-//           <main>
-//             <button onClick={handleFetchStudent}>Get Student</button>
-//             {student ? (
-//               <div>
-//                 <h2>Name: {student.name}</h2>
-//                 <p>Age: {student.age}</p>
-//                 <p>Marks: {student.marks.join(', ')}</p>
-//               </div>
-//             ) : ''}
-//           </main>
-//         </form>
-//   );
-// }
-
-
-// export default App;

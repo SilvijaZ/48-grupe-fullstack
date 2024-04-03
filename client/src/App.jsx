@@ -6,7 +6,7 @@ function App() {
   const [allStudents, setAllStudents] = useState([]);
 
   function handleFetchStudent() {
-    fetch('http://localhost:4831/api/students')
+    fetch('http://localhost:4831/api/student')
       .then(res => res.json())
       .then(data => setStudent(data))
       .catch(error => console.error(error));

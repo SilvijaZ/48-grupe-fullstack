@@ -44,7 +44,7 @@ const students = [
 
 let currentIndex = 0;
 
-app.get('/api/students', (req, res) => {
+app.get('/api/student', (req, res) => {
     const student = students[currentIndex];
     currentIndex = (currentIndex + 1) % students.length;
     res.json(student);
